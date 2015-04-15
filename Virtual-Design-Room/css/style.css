@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* GLOBAL CSS START ---- Don't Change ---------  */
+html, body {height:100%;}
+
+body {margin:0; font-family:"OpenSans-Regular"; font-size:12px;}
+a {color:#7b0302; text-decoration:none}
+h3 {font-family:"Raleway-Medium";}
+input {font-family:"OpenSans-Regular"; font-size:12px ;}
+
+@font-face { 
+font-family:"JosefinSlab-SemiBold";
+src:url(../fonts/JosefinSlab-SemiBold.ttf);
+}
+
+@font-face { 
+font-family:"Raleway-Medium";
+src:url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face { 
+font-family:"OpenSans-Bold";
+src:url(../fonts/OpenSans-Bold_0.ttf);
+}
+
+@font-face { 
+font-family:"OpenSans-Regular";
+src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face { 
+font-family:"OpenSans-Semibold";
+src:url(../fonts/OpenSans-Semibold_0.ttf);
+}
+
+.full-width {width:100%; float:left}
+.center-column {width:1150px; margin:auto}
+.no-margin {margin:0}
+.no-top-margin {margin-top:0}
+.no-bottom-margin {margin-bottom:0}
+.no-padding {padding:0}
+.no-top-padding {padding-top:0}
+.no-bottom-padding {padding-bottom:0}
+h3.orange {color:#7b0302; } 
+.input-normal {width:96%; border:1px solid #ddd; padding:2%;}
+.header-brd {border-bottom:1px solid #eaeaea; padding-bottom:8px; }
+.content-col {margin-top:5px; margin-bottom:100px;}
+.text-center {text-align:center}
+.color-orange {color:#7b0302;}
+
+.submit-btn {border:1px solid #7b0302; cursor:pointer; background:#7b0302; color:#fff; font-family:"Raleway-Medium"; text-transform:uppercase; padding:4px 8px;}
+.submit-btn:hover {background:#000; border:1px solid #000;}
+
+.btn-primary {border:1px solid #7b0302; font-size:14px;  cursor:pointer; background:#7b0302; color:#fff; font-family:"Raleway-Medium"; text-transform:uppercase; padding:4px 8px; display:inline-block}
+.btn-primary:hover {background:#000; border:1px solid #000;}
+
+.btn-gray {border:1px solid #202020; font-size:14px;  cursor:pointer; background:#3d3d3d; color:#fff; font-family:"Raleway-Medium"; text-transform:uppercase; padding:4px 8px; display:inline-block}
+.btn-gray:hover {background:#000}
+/* GLOBAL CSS END ---- Don't Change ---------*/
+
+
+/* HEADER CSS START */
+.head1 {background:#242424; }
+.head1-nav {}
+
+.user-login {font-family:"Raleway-Medium"; font-size:16px; color:#fff; padding:7px 0; text-align:right}
+.user-icon {margin-right:8px; font-size:15px; color:#999;}
+
+.logo-col {float:left; margin: 8px 0;}
+.head2-nav {float:right}
+
+.login-user-caution {font-family:"Raleway-Medium"; text-align:right; margin-top:4px; font-size:11px; color:#7b0302;}
+.login-user-caution a {color:#7b0302;}
+.login-user-caution a:hover {color:#000; text-decoration:underline}
+
+.nav-col {border-top:1px solid #eaeaea; border-bottom:1px solid #eaeaea;}
+.nav-ul {margin:0; padding:0}
+.nav-ul li {display:inline-block;}
+.nav-ul li a {font-size:14px; font-family:"OpenSans-Semibold"; text-transform:uppercase; color:#555; padding:10px 30px; display:block}
+.nav-ul li a:hover {color:#ea5748;}
+.nav-ul li a.selected {color:#ea5748;}
+
+.head-nav1 {margin-top:30px;}
+
+.head-nav1-ul {margin:0; padding:0;}
+.head-nav1-ul li {display:inline-block; color:#555; margin-right:25px; font-size:14px;  font-family:"OpenSans-Semibold";}
+.head-nav1-ul li a {color:#555; font-size:14px; font-family:"OpenSans-Semibold";}
+.head-nav1-ul li:last-child {margin-right:0}
+.head-nav1-ul li a:hover {color:#ea5748;}
+.header-column {border-bottom:1px solid #eaeaea;}
+/* HEADER CSS END */
+
+
+/* DESIGN ROOM CSS START */
+
+.dsgn-rm-left-col {width:65%; margin-right:5%; float:left}
+.dsgn-rm-right-col {width:30%; float:left}
+.related-models {width:98%; padding:1%; margin-top:0px; float:left; border:1px solid #eaeaea;}
+
+.related-models-ul {margin:0; padding:0}
+.related-models-ul li {display:inline-block}
+.related-models-ul li img {width:70px; border:1px solid #ddd;}
+.slider-nav {float:right}
+
+.model-bg {width:520px; margin:auto; height:500px; background:url(../images/model-1.jpg) center no-repeat}
+
+.hot-spot {color:#333; font-size:18px;}
+.hot-sopt1 {margin-top: 80px;}
+.hot-sopt1 .hot-spot-icon {margin-left:160px;}
+.hot-sopt2 .hot-spot-icon {margin-left:-130px;}
+
+.hot-sopt3 {margin-top: 63px;}
+.hot-sopt3 .hot-spot-icon {margin-left:-50px;}
+
+.hot-sopt4 {margin-top: 95px;}
+.hot-sopt4 .hot-spot-icon {margin-left:-50px;}
+
+.hot-sopt5 {margin-top: 87px;}
+.hot-sopt5 .hot-spot-icon {margin-left:-130px;}
+
+.hot-spot-icon {cursor:pointer; position:relative}
+
+/* Responsive tabbed panel css start */
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 15px; 
+    margin:0 4px 0 0;
+    list-style: none; background:#eaeaea;
+    cursor: pointer; text-transform:uppercase;
+    float: left; font-family:"OpenSans-Semibold";
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;float: left;
+    padding: 4%;
+    width: 92%;
+}
+
+.resp-tab-active {
+    border:0;
+    border-bottom: none;
+    margin-bottom: -1px !important;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #000 !important; color:#fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {
+    border: 1px solid #eaeaea;
+}
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px !important;
+    margin: 0;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+}
+
+.resp-vtabs li.resp-tab-active {
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB !important;
+}
+.resp-easy-accordion  h2.resp-accordion {
+        display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1 !important;
+}
+
+.resp-tabs-list {margin:0; padding:0}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display:none !important;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+}
+
+/* Responsive tabbed panel css end*/
+
+.thumbnails-list {margin:0; padding:0}
+.thumbnails-list li {display:inline-block;}
+.thumbnails-list li img {width:59px; border:1px solid #ddd; cursor:pointer;}
+.thumbnails-list li img:hover {border:1px solid #000; }
+
+
+/* Tooltip CSS Start */
+.tooltipster-default {
+	border-radius: 1px; 
+	border: 1px solid #ddd;
+	background: rgba(242, 242, 242, 1);
+	color: #333; margin-left:-10px; margin-top:-6px; position:relative; z-index:1;
+}
+.hot-spot {z-index:999}
+
+.tooltipster-default .tooltipster-content {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+	overflow: hidden;
+}
+
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+	/* border-color: ... !important; */
+}
+
+
+
+.tooltipster-base {
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9999999;
+	pointer-events: none;
+	width: auto;
+	overflow: visible;
+}
+.tooltipster-base .tooltipster-content {
+	overflow: hidden;
+}
+
+
+
+
+.tooltipster-fade {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	-ms-transition-property: opacity;
+	transition-property: opacity;
+}
+.tooltipster-fade-show {
+	opacity: 1;
+}
+
+/* Tooltip CSS End */
+
+.md-screen-head {position:absolute; width:92%; padding:10px 4%; display:none}
+.bullet-points{position:absolute; margin-left:265px;}
+
+.bullet-popup { background:#f4f2f3;
+    left: 15px;
+    position: absolute;
+    top: 28px; text-align:left; max-height:350px;  overflow-x:hidden; overflow-y:auto;
+     padding:10px; border:1px solid #ddd;  display:none; font-size:14px; z-index:2;}
+	
+.bullet-tooltip { background: #f8f8f8; color:#333;
+    left: 30px;
+    position: absolute;
+    top: -5px; display:none; font-size:12px; width:200px; padding:5px;}
+.showtooltip .bullet-tooltip {display:block}
+.open-popup .bullet-popup {display:block !important}
+.open-popup .bullet-tooltip{display:none !important}
+.open-popup2 {display:none}
+
+.popup-list {margin:0; padding:0}
+.popup-list li {display:block}
+.popup-list li img {width:100px; border:1px solid #f8f8f8}
+.popup-list li img:hover {border:1px solid #333;}
+
+.hot-spot-icon img {position:relative; z-index:1}
+
+/* DESIGN ROOM CSS END */
+
+
+/* Footer Start*/
+.footer-cnt {width:100%; padding:4% 0; float:left}
+.footer-col {background:#000;}
+.footer-col1 {width:18%; float:left; margin-right:2%;}
+.footer-col2 {width:18%; float:left; margin-right:2%;}
+.footer-col3 {width:20%; float:left; margin-right:2%;}
+.footer-col4 {width:18%; float:left; margin-right:2%;}
+.footer-col5 {width:18%; float:left; }
+.footer-cnt-col {}
+.footer-cnt-col h2{color:#fff; text-transform:uppercase; font-family:"Raleway-Medium"; padding-bottom:8px; font-size:12px; margin:0; border-bottom:1px solid #2a2a2a;}
+.footer-cnt-col p{color:#fff;  font-family:"Raleway-Medium"; font-weight:bold;  font-size:12px; margin:0; }
+.footer-cnt-col1 {margin-top:8px;}
+.footer-links {margin:0; padding:0}
+.footer-links li {display:block}
+.footer-links li a {color:#fff; font-size:12px; color:#6b6b6b; margin:10px 0; display:block}
+.footer-links li a:hover {color:#fff; }
+.link-angle {margin-right:8px;}
+
+.subscribe-input {border:0; background:#fff; width:96%; padding:2%; height:20px;}
+.subscribe-btn-col {margin-top:10px;}
+
+.copyright-col {border-top:1px solid #2a2a2a; color:#6b6b6b; text-align:center;font-size:12px; padding:10px 0 }
+
+/* Footer End */
+
+@media screen and (max-height: 800px) and (max-width:1200px) {
+	
+	.center-column {width:95%;}
+	.model-img {width:100px;}
+	.header-column {display:none;}
+    .md-screen-head  {display:block}
+	.related-models-ul li img {width:50px;}
+	.model-img {width:140px;}
+	.bullet-points {margin-left: 212px;}
+	.hot-sopt3 { margin-top: 23px;}
+	.hot-sopt4 {margin-top: 65px;}
+	.hot-sopt5 {margin-left: 25px;margin-top: 72px;}
+}
