@@ -9,9 +9,9 @@
 <script src="js/respond.src.js" type="text/javascript"></script>
 <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
-	
+
 	<script type="text/javascript">
-	
+
 	function handleResize() {
 		var DocHeight = $(window).height();
 $(".dsgn-rm-right-col").height(DocHeight-150);
@@ -20,9 +20,9 @@ $(".model-col").height(DocHeight-200);
 
 $(".tab-container").css({"overflow-x": "hidden", "overflow-y": "auto"});
 $(".model-col").css({"overflow-x": "hidden", "overflow-y": "auto"})
-	
+
 	}
-	
+
 		function handleResize2() {
 		var DocHeight = $(window).height();
 $(".dsgn-rm-right-col").height(DocHeight-10);
@@ -31,13 +31,13 @@ $(".model-col").height(DocHeight-90);
 
 $(".tab-container").css({"overflow-x": "hidden", "overflow-y": "auto"});
 $(".model-col").css({"overflow-x": "hidden", "overflow-y": "auto"})
-	
+
 	}
-	
+
 function mdscreen() {
-	
-	
-	
+
+
+
 	if($(window).innerWidth() <= 1200) {
    handleResize2();
 } else {
@@ -45,29 +45,29 @@ function mdscreen() {
 }
 
 }
-	
+
 	$(function(){
 		mdscreen();
-		
+
 $(document).ready(function() {
-	
-	
-	
-	
-	
+
+
+
+
+
 	$('html').click(function(e) {
 	$(".open-popup").removeClass("open-popup")
  })
- 
 
- 
+
+
 $(".hot-spot-icon").click(function(e){
-		 
+
 $(this).toggleClass("open-popup");
 e.stopPropagation();
-		 
-		 
-}); 
+
+
+});
 
 
 
@@ -77,17 +77,17 @@ $('.bullet-popup').click(function(e){
 
 
 
-	
-	
-	
-	
+
+
+
+
 	 mdscreen();
-	 
-	 
+
+
 
 $( ".hot-spot-icon" ).hover(function() {
   $( this ).toggleClass( "showtooltip" );
-  
+
 
 });
 
@@ -96,12 +96,12 @@ $( ".hot-spot-icon" ).hover(function() {
 $(window).resize(function(){
 		mdscreen();
 });
-	
+
 });
-		
+
 	</script>
-    
-   
+
+
 </head>
 
 <body>
@@ -115,7 +115,8 @@ $(window).resize(function(){
 <div class="center-column">
 
 <div class="logo-col">
-  <img src="images/logo.png" width="145" /></div>
+  <%= image_tag "logo.png", width:"145" %>
+</div>
 <div class="head2-nav">
 
 <div class="head-nav1">
@@ -130,7 +131,8 @@ $(window).resize(function(){
 </div>
 
 <div class="md-screen-head">
-  <img src="images/logo.png" width="140"  /></div>
+  <%= image_tag "logo.png", width:"140" %>
+</div>
 
 </header>
 
@@ -151,9 +153,10 @@ $(window).resize(function(){
 <div class="bullet-tooltip">Click Here to Change Neckline</div>
 <div class="bullet-popup">
 <ul class="popup-list">
-<li><img src="images/neckline-design1.jpg" /></li>
-<li><img src="images/neckline-design2.jpg" /></li>
-<li><img src="images/neckline-design3.jpg" /></li>
+
+<li><%= image_tag "neckline-design1.jpg" %></li>
+<li><%= image_tag "neckline-design2.jpg" %></li>
+<li><%= image_tag "neckline-design3.jpg" %></li>
 </ul>
 </div>
 
@@ -164,9 +167,9 @@ $(window).resize(function(){
 <div class="bullet-tooltip">Click Here to Change Neckline</div>
 <div class="bullet-popup">
 <ul class="popup-list">
-<li><img src="images/neckline-design1.jpg" /></li>
-<li><img src="images/neckline-design2.jpg" /></li>
-<li><img src="images/neckline-design3.jpg" /></li>
+<li><%= image_tag "neckline-design1.jpg" %></li>
+<li><%= image_tag "neckline-design2.jpg" %></li>
+<li><%= image_tag "neckline-design3.jpg" %></li>
 </ul>
 </div>
 </span></div>
@@ -174,9 +177,9 @@ $(window).resize(function(){
 <div class="bullet-tooltip">Click Here to Change Neckline</div>
 <div class="bullet-popup">
 <ul class="popup-list">
-<li><img src="images/neckline-design1.jpg" /></li>
-<li><img src="images/neckline-design2.jpg" /></li>
-<li><img src="images/neckline-design3.jpg" /></li>
+<li><%= image_tag "neckline-design1.jpg" %></li>
+<li><%= image_tag "neckline-design2.jpg" %></li>
+<li><%= image_tag "neckline-design3.jpg" %></li>
 </ul>
 </div>
 </span></div>
@@ -184,9 +187,9 @@ $(window).resize(function(){
 <div class="bullet-tooltip">Click Here to Change Neckline</div>
 <div class="bullet-popup">
 <ul class="popup-list">
-<li><img src="images/neckline-design1.jpg" /></li>
-<li><img src="images/neckline-design2.jpg" /></li>
-<li><img src="images/neckline-design3.jpg" /></li>
+<li><%= image_tag "neckline-design1.jpg" %></li>
+<li><%= image_tag "neckline-design2.jpg" %></li>
+<li><%= image_tag "neckline-design3.jpg" %></li>
 </ul>
 </div>
 </span></div>
@@ -194,9 +197,9 @@ $(window).resize(function(){
 <div class="bullet-tooltip">Click Here to Change Neckline</div>
 <div class="bullet-popup">
 <ul class="popup-list">
-<li><img src="images/neckline-design1.jpg" /></li>
-<li><img src="images/neckline-design2.jpg" /></li>
-<li><img src="images/neckline-design3.jpg" /></li>
+<li><%= image_tag "neckline-design1.jpg" %></li>
+<li><%= image_tag "neckline-design2.jpg" %></li>
+<li><%= image_tag "neckline-design3.jpg" %></li>
 </ul>
 </div>
 </span></div>
@@ -209,11 +212,11 @@ $(window).resize(function(){
 <div class="related-models">
 
 <ul class="related-models-ul">
-<li><img src="images/model-2.jpg" /></li>
-<li><img src="images/model-3.jpg"/></li>
-<li><img src="images/model-4.jpg"/></li>
-<li><img src="images/model-5.jpg"/></li>
-<li><img src="images/model-6.jpg"/></li>
+<li><%= image_tag "model-2.jpg" %></li>
+<li><%= image_tag "model-3.jpg" %></li>
+<li><%= image_tag "model-4.jpg" %></li>
+<li><%= image_tag "model-5.jpg" %></li>
+<li><%= image_tag "model-6.jpg" %></li>
 </ul>
 </div>
 
@@ -236,37 +239,37 @@ $(window).resize(function(){
                 <li>Designs</li>
             </ul>
             <div class="resp-tabs-container">
-            
+
                 <div id="tab1">
                    <div class="tab-container">
                    <div class="full-width">
-                   
+
                    <h3 class="orange no-top-margin">Fabrics</h3>
                    <ul class="thumbnails-list">
-                    <li><img src="images/patterns/img1.jpg" /></li>
-                    <li><img src="images/patterns/img2.jpg"  /></li>
-                    <li><img src="images/patterns/img3.jpg"  /></li>
-                    <li><img src="images/patterns/img4.jpg"  /></li>
-                    <li><img src="images/patterns/img5.jpg" /></li>
-                    <li><img src="images/patterns/img6.jpg"  /></li>
-                    <li><img src="images/patterns/img7.jpg" /></li>
-                    <li><img src="images/patterns/img8.jpg"  /></li>
-                    <li><img src="images/patterns/img9.jpg"  /></li>
-                    <li><img src="images/patterns/img10.jpg"  /></li>
-                    <li><img src="images/patterns/img11.jpg"  /></li>
-                    <li><img src="images/patterns/img12.jpg"/></li>
-                    <li><img src="images/patterns/img13.jpg" /></li>
-                    <li><img src="images/patterns/img14.jpg" /></li>
-                    <li><img src="images/patterns/img15.jpg"  /></li>
+                    <li><%= image_tag "patterns/img1.jpg" %></li>
+                    <li><%= image_tag "patterns/img2.jpg" %></li>
+                    <li><%= image_tag "patterns/img3.jpg" %></li>
+                    <li><%= image_tag "patterns/img4.jpg" %></li>
+                    <li><%= image_tag "patterns/img5.jpg" %></li>
+                    <li><%= image_tag "patterns/img6.jpg" %></li>
+                    <li><%= image_tag "patterns/img7.jpg" %></li>
+                    <li><%= image_tag "patterns/img8.jpg" %></li>
+                    <li><%= image_tag "patterns/img9.jpg" %></li>
+                    <li><%= image_tag "patterns/img10.jpg" %></li>
+                    <li><%= image_tag "patterns/img11.jpg" %></li>
+                    <li><%= image_tag "patterns/img12.jpg" %></li>
+                    <li><%= image_tag "patterns/img13.jpg" %></li>
+                    <li><%= image_tag "patterns/img14.jpg" %></li>
+                    <li><%= image_tag "patterns/img15.jpg" %></li>
                    </ul>
-                   
+
                    <h3 class="orange ">X Factor </h3>
                    <div class="full-width">
                    <label><input name="" type="checkbox" checked="checked" value="" /> Pockets Invisible</label>
                    <p><b>X1</b></p>
                    <ul class="thumbnails-list">
-                    <li><img src="images/patterns/x1-img1.jpg"  /></li>
-                    <li><img src="images/patterns/x1-img2.jpg"  /></li>
+                    <li><%= image_tag "patterns/x1-img1.jpg" %></li>
+                    <li><%= image_tag "patterns/x1-img2.jpg" %></li>
                    </ul>
                    <p><b>X2</b></p><br />
 <div><input name="" class="input-normal" type="text" Value="Milena"/></div>
@@ -274,14 +277,14 @@ $(window).resize(function(){
 <h3 class="orange ">Size</h3>
 <p>Milena's - Small Banana Republic</p>
                    </div>
-                   
-                   
-                   
+
+
+
                    </div>
                   </div>
                 </div>
-                
-               
+
+
                 <div class="tab2">
                  <div class="tab-container">
                     <div class="full-width">
@@ -291,33 +294,33 @@ $(window).resize(function(){
                     <li><img src="images/patterns/neckline-2.jpg"  /></li>
                     <li><img src="images/patterns/neckline-3.jpg"  /></li>
                    </ul>
-                   
+
                    <h3 class="orange">Fabric</h3>
-                   
+
                    <ul class="thumbnails-list">
                     <li><img src="images/patterns/img5.jpg" /></li>
                     <li><img src="images/patterns/img6.jpg"  /></li>
                     <li><img src="images/patterns/img11.jpg"  /></li>
                    </ul>
-                   
+
                    <h3 class="orange">Pattern</h3>
-                   
+
                    <ul class="thumbnails-list">
-                    
+
                     <li><img src="images/patterns/img3.jpg"  /></li>
                     <li><img src="images/patterns/img4.jpg"  /></li>
                     <li><img src="images/patterns/img5.jpg" /></li>
                     <li><img src="images/patterns/img12.jpg"/></li>
                    </ul>
-                   
+
                     </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
-        
+
         <div class="full-width" style="margin-top:20px;">
         <h2>Still Not Seeing What you are looking for?</h2>
         <p>Send us a picture or your scratch paper and we'll find a way to make it happen - we'll send you a proposal and go from there.</p>
@@ -328,7 +331,7 @@ $(window).resize(function(){
 <script type="text/javascript">
     $(document).ready(function () {
         $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion           
+            type: 'default', //Types: default, vertical, accordion
             width: 'auto', //auto or any width like 600px
             fit: true,   // 100% fit in a container
             closed: 'accordion', // Start closed if in accordion view
@@ -343,7 +346,7 @@ $(window).resize(function(){
             }
         });
 
-       
+
     });
 </script>
 </div>
